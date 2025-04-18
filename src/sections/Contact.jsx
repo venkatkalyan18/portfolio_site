@@ -23,6 +23,7 @@ const Contact = () => {
     setLoading(true); // Show loading state
 
     try {
+      console.log(import.meta.env.VITE_APP_EMAILJS_SERVICE_ID);
       await emailjs.sendForm(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
@@ -46,8 +47,8 @@ const Contact = () => {
           title="Get in Touch – Let’s Connect"
           sub="💬 Have questions or ideas? Let’s talk! 🚀"
         />
-        <div className="grid-12-cols mt-16">
-          <div className="xl:col-span-5">
+        <div className="">
+          <div className="">
             <div className="flex-center card-border rounded-xl p-10">
               <form
                 ref={formRef}
@@ -105,11 +106,6 @@ const Contact = () => {
                   </div>
                 </button>
               </form>
-            </div>
-          </div>
-          <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              <ContactExperience />
             </div>
           </div>
         </div>

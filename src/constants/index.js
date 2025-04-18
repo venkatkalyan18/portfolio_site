@@ -1,10 +1,6 @@
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
-  },
-  {
-    name: "Experience",
+    name: "Projects",
     link: "#experience",
   },
   {
@@ -12,8 +8,8 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "contact",
+    link: "#contact",
   },
 ];
 
@@ -29,10 +25,17 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  {
+    value: 350,
+    suffix: "+",
+    label: "Coding questions solved (LeetCode/Codeforces)",
+  },
+  {
+    value: "3+ years",
+    suffix: "",
+    label:
+      "Practical experience with coding, problem-solving, and project development.",
+  },
 ];
 
 const logoIconsList = [
@@ -89,97 +92,71 @@ const abilities = [
   },
 ];
 
-const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
-  },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
-  },
-];
-
 const techStackIcons = [
   {
-    name: "React Developer",
-    modelPath: "/models/react_logo-transformed.glb",
-    scale: 1,
-    rotation: [0, 0, 0],
+    name: "Java",
+    modelPath: "images/logos/javaLogo.webp",
   },
   {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
+    name: "Spring Boot",
+    modelPath: "images/logos/Spring_Boot.svg",
   },
   {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
+    name: "React JS",
+    modelPath: "images/logos/react.png",
   },
   {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
-    rotation: [0, 0, 0],
+    name: "Java Script",
+    modelPath: "images/logos/js.webp",
   },
   {
-    name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
-    scale: 0.05,
-    rotation: [0, -Math.PI / 4, 0],
+    name: "SQL",
+    modelPath: "images/logos/mySql.png",
   },
 ];
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
+    review:
+      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
+    imgPath: "/images/exp1.png",
+    githubLink:
+      "https://github.com/venkatkalyan18/ether-fi--WEB3-/tree/main/reactforms",
+    title: "EtherFi: Decentralized Crowdfunding Platform",
     date: "January 2023 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Built a decentralized crowdfunding platform on Ethereum with transparent, immutable transactions.",
+      "Developed secure smart contracts in Solidity to automate and protect funding processes.",
+      "Deployed on the Ethereum testnet with 95% test coverage for reliability.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
+    review:
+      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
+    imgPath: "/images/exp2.png",
+    githubLink: "https://github.com/orgs/Event-page-rns/repositories",
+    title: "Eventus: College Club Event Management",
     date: "June 2020 - December 2023",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed a full-stack event management platform using React.js and Spring Boot.",
+      "Designed a responsive UI for event browsing with time, location, and details.",
+      "Integrated authentication and role-based access control for secure event management.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
+    review:
+      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
+    imgPath: "/images/exp3.png",
+    githubLink: "https://github.com/venkatkalyan18/Joyflick_js",
+    title: "JoyFlick: A Fun Website",
     date: "March 2019 - May 2020",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Built Drench using DFS for efficient grid-filling.",
+      " Generated realistic terrains with Wave Function Collapse.",
+      "Developed a memory game with hashing for fast card matching.",
     ],
   },
 ];
@@ -248,18 +225,22 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    link: "https://www.instagram.com/venkat___kalyan/",
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
+    name: "Github",
+    imgPath: "/images/logos/github_logo_icon.webp",
+    link: "https://github.com/venkatkalyan18",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    link: "https://github.com/venkatkalyan18",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://linkedin.com/in/kvenkatkalyan23",
   },
 ];
 
@@ -273,6 +254,5 @@ export {
   testimonials,
   socialImgs,
   techStackIcons,
-  techStackImgs,
   navLinks,
 };
