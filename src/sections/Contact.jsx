@@ -49,7 +49,7 @@ const Contact = () => {
         />
         <div className="">
           <div className="">
-            <div className="flex-center card-border rounded-xl p-10">
+            <div className="flex-center card-border rounded-xl md:p-10 p-8">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
